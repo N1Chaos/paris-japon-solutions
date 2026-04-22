@@ -35,21 +35,7 @@ body {
     position: relative;
 }
 
-/* 🌿 FILIGRANE ENSŌ */
-body::before {
-    content: "";
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 480px;
-    height: 480px;
-    background: url("../images/enso.png") no-repeat center;
-    background-size: contain;
-    transform: translate(-50%, -50%);
-    opacity: 0.02;
-    pointer-events: none;
-    z-index: 0;
-}
+
 
 /* =========================
    🎌 NAVBAR PREMIUM
@@ -362,30 +348,29 @@ a, button {
     color: var(--text-light);
 }
 
-body {
-    position: relative;
-}
 
-/* 🌿 FILIGRANE LATÉRAL (droite) */
+
+/* 🌿 FILIGRANE LATÉRAL LUXE (droite, discret, premium) */
 body::before {
     content: "";
     position: fixed;
 
-    right: -320px;   /* 👈 dépasse légèrement de l’écran (effet luxe) */
+    right: -420px;   /* plus hors écran = plus élégant */
     top: 50%;
     transform: translateY(-50%);
 
-    width: 1000px;
-    height: 500px;
+    width: 1100px;
+    height: 600px;
 
     background: url("../img/enso2.jpeg") no-repeat center;
     background-size: contain;
 
-    opacity: 0.5;   /* subtil mais visible */
-    filter: contrast(1.1) brightness(1.05);
+    opacity: 0.08;   /* 👈 beaucoup plus subtil (IMPORTANT) */
 
     pointer-events: none;
     z-index: 0;
+
+    filter: blur(0.2px) contrast(1.05);
     mix-blend-mode: multiply;
 }
 
