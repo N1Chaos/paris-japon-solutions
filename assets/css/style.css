@@ -394,3 +394,26 @@ body::before {
     display: block;
     flex-shrink: 0;     /* empêche l’agrandissement */
 }
+
+body::after {
+    content: "";
+    position: fixed;
+
+    left: -290px;
+    top: 55%;
+    transform: translateY(-50%);
+
+    width: 900px;
+    height: 600px;
+
+    background: url("../img/sakura.png") no-repeat center;
+    background-size: contain;
+
+    opacity: 0.14;
+
+    pointer-events: none;
+    z-index: 0;
+
+    filter: blur(0.2px) contrast(1.05);
+    mix-blend-mode: multiply;
+}
