@@ -3,7 +3,7 @@
 ========================= */
 function showEmail() {
     document.getElementById("email").innerHTML =
-        "contact@parisjapon-solutions.com";
+        "paris.japon.solutions@gmail.com";
 }
 
 /* =========================
